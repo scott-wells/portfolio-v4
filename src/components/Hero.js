@@ -6,14 +6,14 @@ import pic from "../images/profile-pic.jpg";
 
 const Hero = () => {
   return (
-    <section className='section-wrap section-hero p-3'>
+    <section className='section-wrap section-hero px-2 py-4'>
         {/* <div className='background-circles'>
             <div className='circle-1'></div>
             <div className='circle-2'></div>
             <div className='circle-3'></div>
         </div> */}
         <div className='hero-title'>
-            <h1 className="mb-2">
+            <h1 className="mb-3">
                 Hi there! <br /> I'm Scott{" "}
                 <span role='img' aria-label='peace hand'>👋🏻</span>
             </h1>
@@ -22,7 +22,7 @@ const Hero = () => {
             <img src={pic} alt='profile pic'/>
         </div>
         <div className='hero-desc'>
-          <p>
+          <p className='mb-3'>
             I am a front end developer. I design websites for makers, creatives,
             and small businesses. I love photography, blockchain, UX/UI, and all
             things code.
