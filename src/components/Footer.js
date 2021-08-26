@@ -10,8 +10,8 @@ import logo from "../images/pixel-scott.png";
 // Render
 const Footer = () => {
     return (
-        <footer className='footer'>
-            Footer
+        <footer>
+            FOOTER
         </footer>
     )
 }

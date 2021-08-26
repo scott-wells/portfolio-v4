@@ -1,0 +1,43 @@
+ 
+header {
+    height: 70px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        color: $greydark;
+        text-decoration: none;
+        .logo {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            .logo-image {
+                padding: 0 .8rem;
+                img {
+                    height: 30px;
+                }
+            }
+            span {
+                font-size: 1.8rem;
+                font-weight: 700;
+                letter-spacing: -.05rem;
+                margin: 0;
+            }
+        }
+    }
+    nav {
+        color: $greydark;
+        font-size: 1.1rem;
+        font-weight: 600;
+        a {
+            padding: 0 .8rem;
+            display: inline-block;
+            cursor: pointer;
+        }
+        a:hover {
+            @include buttonPill;
+        }
+    }
+}
+

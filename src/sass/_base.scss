@@ -1,0 +1,251 @@
+/* ---------------
+    Variables
+------------------ */
+$greydark: rgb(70 70 70);;
+$grey: #868f92;
+$offwhite: #f3f3f3;
+$orangeaccent: rgb(221, 86, 7);
+$orangeaccentdarker: rgb(172, 71, 13);
+$offwhite: #f6f8f8;
+$blueaccent: rgb(7, 160, 221);
+$blueaccentdarker: rgb(13, 114, 172);
+$phone: 640px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktopXL: 1440px;
+
+/* ---------------
+     Mixins
+------------------ */
+@mixin buttonPill {
+  background: $offwhite;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* ---------------
+      Fonts
+------------------ */
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800&display=swap');
+// * { font-family: "Montserrat", Arial, Helvetica, sans-serif; }
+* { font-family: "Nunito", Arial, Helvetica, sans-serif; }
+
+
+/* ------------------
+    Root Page Styles
+--------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {
+  font-size: 14px;
+  line-height: 28px;
+}
+/* Larger than phablet */
+@media (min-width: 550px) {
+  html {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+body {
+  color: $greydark;
+  font-family: "Nunito", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  margin: auto;
+}
+/* Headings */
+.h0 { 
+  color: black;
+  font-weight: 800;  
+  font-size: 5.3rem; 
+  line-height: 1; 
+  letter-spacing: -.25rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+h1, h3 {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 700; 
+}
+h2, h4 {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 400; 
+}
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem; }
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; margin-bottom: 1rem; }
+h6 { font-size: 1.3rem; line-height: 1.6;  letter-spacing: 0; font-weight: 300; margin-bottom: .5rem;}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .h0 { 
+    font-size: 6rem; 
+    letter-spacing: -.4rem; 
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.3rem; }
+}
+/* Everything else */
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+} 
+/* Let's make sure all's aligned */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+/* a, b, i, strong, em, small, code { line-height: 0; } */
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup { top: -0.5em;}
+sub { bottom: -0.25em; } 
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root { --spacer: 4%; }
+
+/* Margin All Around */
+.m-0 { margin: 0; }
+.m-1 { margin: calc(var(--spacer) * .5); }
+.m-2 { margin: var(--spacer); }
+.m-3 { margin: calc(var(--spacer) * 2); }
+.m-4 { margin: calc(var(--spacer) * 3); }
+.m-5 { margin: calc(var(--spacer) * 4); }
+
+/* Margin Left & Right */
+.mx-0 { margin-left: 0; margin-right: 0; }
+.mx-1 { margin-left: calc(var(--spacer) * .5); margin-right: calc(var(--spacer) * .5); }
+.mx-2 { margin-left: var(--spacer); margin-right: var(--spacer); }
+.mx-3 { margin-left: calc(var(--spacer) * 2); margin-right: calc(var(--spacer) * 2); }
+.mx-4 { margin-left: calc(var(--spacer) * 3); margin-right: calc(var(--spacer) * 3); }
+.mx-5 { margin-left: calc(var(--spacer) * 4); margin-right: calc(var(--spacer) * 4); }
+
+/* Margin Left & Right */
+.my-0 { margin-top: 0; margin-right: 0; }
+.my-1 { margin-top: calc(var(--spacer) * .5); margin-bottom: calc(var(--spacer) * .5); }
+.my-2 { margin-top: var(--spacer); margin-bottom: var(--spacer); }
+.my-3 { margin-top: calc(var(--spacer) * 2); margin-bottom: calc(var(--spacer) * 2); }
+.my-4 { margin-top: calc(var(--spacer) * 3); margin-bottom: calc(var(--spacer) * 3); }
+.my-5 { margin-top: calc(var(--spacer) * 4); margin-bottom: calc(var(--spacer) * 4); }
+
+/* Margin Left */
+.ml-0 { margin-left: 0; }
+.ml-1 { margin-left: calc(var(--spacer) * .5); }
+.ml-2 { margin-left: var(--spacer); }
+.ml-3 { margin-left: calc(var(--spacer) * 2); }
+.ml-4 { margin-left: calc(var(--spacer) * 3); }
+.ml-5 { margin-left: calc(var(--spacer) * 4); }
+
+/* Margin Right */
+.mr-0 { margin-right: 0; }
+.mr-1 { margin-right: calc(var(--spacer) * .5); }
+.mr-2 { margin-right: var(--spacer); }
+.mr-3 { margin-right: calc(var(--spacer) * 2); }
+.mr-4 { margin-right: calc(var(--spacer) * 3); }
+.mr-5 { margin-right: calc(var(--spacer) * 4); }
+
+/* Margin Top */
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: calc(var(--spacer) * .5); }
+.mt-2 { margin-top: var(--spacer); }
+.mt-3 { margin-top: calc(var(--spacer) * 2); }
+.mt-4 { margin-top: calc(var(--spacer) * 3); }
+.mt-5 { margin-top: calc(var(--spacer) * 4); }
+
+/* Margin Bottom */
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: calc(var(--spacer) * .5); }
+.mb-2 { margin-bottom: var(--spacer); }
+.mb-3 { margin-bottom: calc(var(--spacer) * 2); }
+.mb-4 { margin-bottom: calc(var(--spacer) * 3); }
+.mb-5 { margin-bottom: calc(var(--spacer) * 4); }
+
+/* Padding All Around */
+.p-0 { padding: 0; }
+.p-1 { padding: calc(var(--spacer) * .5);  }
+.p-2 { padding: var(--spacer); }
+.p-3 { padding: calc(var(--spacer) * 2); }
+.p-4 { padding: calc(var(--spacer) * 3); }
+.p-5 { padding: calc(var(--spacer) * 4); }
+
+/* Padding Left & Right */
+.px-0 { padding-left: 0; padding-right: 0; }
+.px-1 { padding-left: calc(var(--spacer) * .5); padding-right: calc(var(--spacer) * .5); }
+.px-2 { padding-left: var(--spacer); padding-right: var(--spacer); }
+.px-3 { padding-left: calc(var(--spacer) * 2); padding-right: calc(var(--spacer) * 2); }
+.px-4 { padding-left: calc(var(--spacer) * 3); padding-right: calc(var(--spacer) * 3); }
+.px-5 { padding-left: calc(var(--spacer) * 4); padding-right: calc(var(--spacer) * 4); }
+
+/* Padding Left & Right */
+.py-0 { padding-top: 0; margin-right: 0; }
+.py-1 { padding-top: calc(var(--spacer) * .5); padding-bottom: calc(var(--spacer) * .5); }
+.py-2 { padding-top: var(--spacer); padding-bottom: var(--spacer); }
+.py-3 { padding-top: calc(var(--spacer) * 2); padding-bottom: calc(var(--spacer) * 2); }
+.py-4 { padding-top: calc(var(--spacer) * 3); padding-bottom: calc(var(--spacer) * 3); }
+.py-5 { padding-top: calc(var(--spacer) * 4); padding-bottom: calc(var(--spacer) * 4); }
+
+/* Padding Left */
+.pl-0 { padding-left: 0; }
+.pl-1 { padding-left: calc(var(--spacer) * .5); }
+.pl-2 { padding-left: var(--spacer); }
+.pl-3 { padding-left: calc(var(--spacer) * 2); }
+.pl-4 { padding-left: calc(var(--spacer) * 3); }
+.pl-5 { padding-left: calc(var(--spacer) * 4); }
+
+/* Padding Right */
+.pr-0 { padding-right: 0; }
+.pr-1 { padding-right: calc(var(--spacer) * .5); }
+.pr-2 { padding-right: var(--spacer); }
+.pr-3 { padding-right: calc(var(--spacer) * 2); }
+.pr-4 { padding-right: calc(var(--spacer) * 3); }
+.pr-5 { padding-right: calc(var(--spacer) * 4); }
+
+/* Padding Top */
+.pt-0 { padding-top: 0; }
+.pt-1 { padding-top: calc(var(--spacer) * .5); }
+.pt-2 { padding-top: var(--spacer); }
+.pt-3 { padding-top: calc(var(--spacer) * 2); }
+.pt-4 { padding-top: calc(var(--spacer) * 3); }
+.pt-5 { padding-top: calc(var(--spacer) * 4); }
+
+/* Padding Bottom */
+.pb-0 { padding-bottom: 0; }
+.pb-1 { padding-bottom: calc(var(--spacer) * .5); }
+.pb-2 { padding-bottom: var(--spacer); }
+.pb-3 { padding-bottom: calc(var(--spacer) * 2); }
+.pb-4 { padding-bottom: calc(var(--spacer) * 3); }
+.pb-5 { padding-bottom: calc(var(--spacer) * 4); }

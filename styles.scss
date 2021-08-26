@@ -1,37 +1,15 @@
-//
-//VARIABLES
-//
-$greydark: #333333;
-$grey: #868f92;
-$offwhite: #f1eee9;
-$orangeaccent: rgb(221, 86, 7);
-$orangeaccentdarker: rgb(172, 71, 13);
-$offwhite: #f6f8f8;
-$blueaccent: rgb(7, 160, 221);
-$blueaccentdarker: rgb(13, 114, 172);
-$phone: 640px;
-$tablet: 768px;
-$desktop: 1024px;
-$desktopXL: 1440px;
 
-//
-//MIXINS
-//
-@mixin buttonPill {
-  background: $offwhite;
-  padding: 0.5rem 0.8rem;
-  text-decoration: none;
-  border-radius: 10px;
-  cursor: pointer;
+/* ---------------
+    Page Styles
+------------------ */
+/*
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
-//
-// FONTS
-//
-@font-face {
-  font-family: "Monserrat", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&display=swap");
-}
 
 a {
   text-decoration: none;
@@ -46,14 +24,7 @@ a:active {
   color: $orangeaccentdarker;
 }
 
-//
-// *
-//
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 .section-wrap {
   background: white;
@@ -106,7 +77,7 @@ a:active {
     }
   }
 }
-*/
+
 
 //
 // HERO SECTION
