@@ -2,7 +2,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 //images
-import logo from "../images/pixel-scott.png";
+import BurgerIcon from "../images/burger"
 
 
 // State Functions
@@ -14,19 +14,16 @@ const Header = () => {
         <header className='header'>
             <Link to='/'>
                 <div className='logo'>
-                    <div className="logo-image">
-                        <img src={logo} alt='logo' />
-                    </div>
-                    <span className="h0">Scott Wells</span>
+                    <span>SW</span>
                 </div>
             </Link>
-
-            <nav className='nav-links'>
-                <Link to='/#02'>Work</Link>
-                <Link to='/#'>Blog</Link>
-                <Link to='/#03'>About</Link>
-                <Link to='/#04'>Contact</Link>
-            </nav>
+            <div className="burger">
+                <BurgerIcon></BurgerIcon>
+            </div>
+            {/* <nav className='nav-links'>
+                <Link to='/#projects'>Projects</Link>
+                <Link to='/#contact'>Contact</Link>
+            </nav> */}
         </header>
     )
 }
