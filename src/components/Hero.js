@@ -4,11 +4,11 @@ import desertImg from '../images/JavascriptIcon'
 
 const Hero = () => {
   return (
-    <section className='section-hero px-2 py-4'>
+    <section className='section-hero'>
 
         <div className='hero-title'>
             <h1>Scott Wells</h1>
-            <p>Developer | Designer</p>
+            <p>Developer&nbsp; | &nbsp;Designer</p>
         </div>
     </section>
   );

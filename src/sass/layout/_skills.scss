@@ -1,0 +1,23 @@
+.section-skills {
+    position: relative;
+    text-align: center;
+    .skills-first {
+        .skills-dots {
+            z-index: -1;
+            position: absolute;
+            top: 30px;
+            right: -40px;
+            width: 170px;
+        }
+        img {
+            width: 150px;
+        }
+    }
+    .skills-line { 
+        border: none;
+        height: 1px;
+        background-color: #9d9d9d;
+        border-radius: 1px;
+    }
+    
+}

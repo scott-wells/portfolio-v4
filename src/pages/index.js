@@ -5,6 +5,7 @@ import "../sass/main.scss"
 //components
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Skills from "../components/Skills";
 import Work from "../components/Work";
 import Footer from "../components/Footer";
 
@@ -15,10 +16,11 @@ const IndexPage = () => {
     <main className="page-wrap">
         <Header />
         <Hero />
+        <Skills />
         <Work />
         <Footer />
     </main>
   )
 }
 
-export default IndexPage
+export default IndexPage;

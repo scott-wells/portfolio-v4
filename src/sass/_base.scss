@@ -71,8 +71,8 @@ html {
 }
 body {
   color: black;
-  font-size: 10px;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 200;
   line-height: 1.6rem;
   margin: auto;
 }
@@ -81,29 +81,26 @@ body {
   color: black;
   font-weight: 800;  
   font-size: 5rem; 
-  line-height: 1; 
+  line-height: 1.6; 
   letter-spacing: -.25rem;
   margin-top: 2rem;
-  margin-bottom: 3rem;
 }
 h1, h3 {
   color: black;
   margin-top: 0;
-  margin-bottom: 2rem;
   font-weight: 700; 
 }
 h2, h4 {
   color: black;
   margin-top: 0;
-  margin-bottom: 2rem;
   font-weight: 400; 
 }
 h1 { font-size: 4.0rem; line-height: 1.6;  letter-spacing: -.1rem; }
-h2 { font-size: 3.6rem; line-height: 1.6; letter-spacing: -.1rem; }
+h2 { font-size: 3.5rem; line-height: 1.6; letter-spacing: -.1rem; }
 h3 { font-size: 3.0rem; line-height: 1.6;  letter-spacing: -.1rem; }
-h4 { font-size: 2.4rem; line-height: 1.6; letter-spacing: -.05rem; }
-h5 { font-size: 1.8rem; line-height: 1.6;  letter-spacing: -.05rem; margin-bottom: 1rem; }
-h6 { font-size: 1.3rem; line-height: 1.6;  letter-spacing: 0; font-weight: 300; margin-bottom: .5rem;}
+h4 { font-size: 2.5rem; line-height: 1.6; letter-spacing: -.05rem; }
+h5 { font-size: 2.0rem; line-height: 1.6;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; font-weight: 300; }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
@@ -123,7 +120,7 @@ h6 { font-size: 1.3rem; line-height: 1.6;  letter-spacing: 0; font-weight: 300; 
 /* Everything else */
 p, ul, ol, pre, table, blockquote {
   margin-top: 0rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0rem;
