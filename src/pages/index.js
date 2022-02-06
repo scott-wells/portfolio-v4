@@ -3,7 +3,7 @@ import * as React from "react"
 //styles
 import "../sass/main.scss"
 //components
-import Header from "../components/Header";
+import Header from "../components/navbar";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Work from "../components/Work";

@@ -2,7 +2,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 //images
-import logo from "../images/pixel-scott.png";
+import logo from "../images/icons/pixel-scott.png";
 
 // State Functions
 

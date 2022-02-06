@@ -2,17 +2,17 @@
 import * as React from "react"
 import { Link } from "gatsby"
 //images
-import SassIcon from "../images/SassIcon";
-import squarespace from "../images/squarespace-logo.png";
-import react from "../images/react-logo.png";
-import HtmlIcon from "../images/HtmlIcon";
-import JavascriptIcon from "../images/JavascriptIcon";
-import GitIcon from "../images/GitIcon";
-import PhpIcon from "../images/PhpIcon";
-import WordpressIcon from "../images/WordpressIcon";
-import MysqlIcon from "../images/MysqlIcon";
-import CssIcon from "../images/CssIcon";
-import MapboxIcon from "../images/mapbox-logo.png";
+import SassIcon from "../images/icons/SassIcon";
+import squarespace from "../images/icons/squarespace-logo.png";
+import react from "../images/icons/react-logo.png";
+import HtmlIcon from "../images/icons/HtmlIcon";
+import JavascriptIcon from "../images/icons/JavascriptIcon";
+import GitIcon from "../images/icons/GitIcon";
+import PhpIcon from "../images/icons/PhpIcon";
+import WordpressIcon from "../images/icons/WordpressIcon";
+import MysqlIcon from "../images/icons/MysqlIcon";
+import CssIcon from "../images/icons/CssIcon";
+import MapboxIcon from "../images/icons/mapbox-logo.png";
 
 // State Functions
 

@@ -1,6 +1,6 @@
 // imports
 import React from "react";
-import desertImg from '../images/JavascriptIcon'
+import desertImg from '../images/icons/JavascriptIcon'
 
 const Hero = () => {
   return (
