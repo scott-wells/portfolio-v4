@@ -64,6 +64,12 @@ const Navbar = () => {
             <nav className={`mobile-nav ${addClass}`}>
                 <Link to='/#work'>Work</Link>
                 <Link to='/#contact'>Contact</Link>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
             </nav>
             }
 
