@@ -1,10 +1,10 @@
 .hero-title-container{
+    height: 66%;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     .hero-title {
-        max-width: 300px;
-        margin-top: 8rem;
+        max-width: 280px;
         h1 {
             color: $orangeDark;
             opacity: 0.8;
@@ -42,7 +42,7 @@
 @media (min-width: 576px) {
     .hero-title-container {
         .hero-title {
-            margin-top: 6rem;
+            transform: scale(1.2);
         }
     }
 }

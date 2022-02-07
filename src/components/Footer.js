@@ -1,10 +1,5 @@
 // Imports
 import * as React from "react"
-import { Link } from "gatsby"
-//images
-import logo from "../images/icons/pixel-scott.png";
-
-// State Functions
 
 
 // Render
@@ -15,7 +10,6 @@ const Footer = () => {
         </footer>
     )
 }
-
 
 
 export default Footer

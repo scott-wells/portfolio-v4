@@ -1,5 +1,5 @@
 // Imports
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 //images
 import BurgerIcon from "../images/icons/burger"
@@ -11,37 +11,14 @@ const Navbar = () => {
     // State 
     const [ burgerOpen, setBurgerOpen ] = useState(false)
     const [ addClass, setAddClass ] = useState('hide')
-    // const [ shrinkNav, setShrinkNav ] = useState(false)
 
     // Effects
-    // useEffect(() => {
-    //     const handler = () => {
-    //         setShrink((shrinkNav) => {
-    //             if (
-    //               !shrinkNav &&
-    //               (document.body.scrollTop > 20 ||
-    //                 document.documentElement.scrollTop > 20)
-    //             ) {
-    //               return true;
-    //             }
-    //             if (
-    //               shrinkNav &&
-    //               document.body.scrollTop < 4 &&
-    //               document.documentElement.scrollTop < 4
-    //             ) {
-    //               return false;
-    //             }
-    //             return shrinkNav;
-    //           });
-    //     };
-    //     window.addEventListener("scroll", handler);
-    //     return () => window.removeEventListener("scroll", handler);
-    //   }, []);
 
     // Functions
+    // 
     // toggles the mobile menu open and close
     const toggleBurger = () => { 
-        setBurgerOpen(!burgerOpen) // sets boolean
+        setBurgerOpen(!burgerOpen) // toggles boolean
         setAddClass(!addClass) // toggles a '.hide' class
     }
 
@@ -54,9 +31,9 @@ const Navbar = () => {
             </Link>
 
             {/* navigation */}
-            <div className="burger" onClick={toggleBurger}>
+            <button type="button" className="burger" onClick={toggleBurger}>
                 <BurgerIcon></BurgerIcon>
-            </div>
+            </button>
 
             {/* mobile-nav */}
             {/* if burgerOpen is true, toggle open nav */}
@@ -74,6 +51,7 @@ const Navbar = () => {
             }
 
             {/* desktop-nav */}
+            {/* hidden under 576px */}
             <nav className="desktop-nav">
                 <Link to='/#work'>Work</Link>
                 <Link to='/#contact'>Contact</Link>

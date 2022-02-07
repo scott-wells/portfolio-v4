@@ -14,7 +14,7 @@ const Container = styled.div`
         background-size: cover;
         height: 100vh;
         text-align: center;
-        border-bottom: 7px solid var(--color);
+        border-bottom: 10px solid var(--color);
     }
     @media (min-width: 576px) {
         .section-hero { 
