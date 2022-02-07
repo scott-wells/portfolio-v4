@@ -11,9 +11,9 @@ const Navbar = () => {
     // State 
     const [ burgerOpen, setBurgerOpen ] = useState(false)
     const [ addClass, setAddClass ] = useState('hide')
-    const [ shrinkNav, setShrinkNav ] = useState(false)
+    // const [ shrinkNav, setShrinkNav ] = useState(false)
 
-    // Watch element
+    // Effects
     // useEffect(() => {
     //     const handler = () => {
     //         setShrink((shrinkNav) => {
@@ -24,7 +24,6 @@ const Navbar = () => {
     //             ) {
     //               return true;
     //             }
-        
     //             if (
     //               shrinkNav &&
     //               document.body.scrollTop < 4 &&
@@ -32,11 +31,9 @@ const Navbar = () => {
     //             ) {
     //               return false;
     //             }
-        
     //             return shrinkNav;
     //           });
     //     };
-    
     //     window.addEventListener("scroll", handler);
     //     return () => window.removeEventListener("scroll", handler);
     //   }, []);
@@ -61,13 +58,20 @@ const Navbar = () => {
                 <BurgerIcon></BurgerIcon>
             </div>
 
+            {/* mobile-nav */}
             {/* if burgerOpen is true, toggle open nav */}
             {burgerOpen &&
-                <nav className={`nav-links ${addClass}`}>
+            <nav className={`mobile-nav ${addClass}`}>
                 <Link to='/#work'>Work</Link>
                 <Link to='/#contact'>Contact</Link>
             </nav>
             }
+
+            {/* desktop-nav */}
+            <nav className="desktop-nav">
+                <Link to='/#work'>Work</Link>
+                <Link to='/#contact'>Contact</Link>
+            </nav>
         </header>
     )
 }

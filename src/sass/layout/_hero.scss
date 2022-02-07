@@ -1,28 +1,25 @@
-.section-hero {
-    // background: url(https://res.cloudinary.com/abq-trails/image/upload/v1636604929/scott-wells/img/desert_vert_xl.jpg);
-    background: url(https://res.cloudinary.com/abq-trails/image/upload/v1636787502/scott-wells/img/desert_vert_xl_02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    padding: 30vh 0;
-    text-align: center;
+.hero-title {
+    margin-top: 10rem;
+    h1 {
+        color: $orangeDark;
+        opacity: 0.8;
+        font-size: 5rem;
+        line-height: 3.7rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: -0.3rem;
+        margin-bottom: 1.6rem;
+    }
+    p {
+        color: $orangeDark;
+        opacity: 0.8;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width: 576px) {
     .hero-title {
-        margin: 0 auto;
-        h1 {
-            color: $orangeDark;
-            opacity: 0.8;
-            font-size: 5rem;
-            line-height: 3.7rem;
-            text-transform: uppercase;
-            font-weight: 800;
-            letter-spacing: -0.3rem;
-            margin-bottom: 1.6rem;
-        }
-        p {
-            color: $orangeDark;
-            opacity: 0.8;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-        }
+        margin-top: 12rem;
     }
 }

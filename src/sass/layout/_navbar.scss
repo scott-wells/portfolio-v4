@@ -1,13 +1,10 @@
- 
-header {
+ header {
     min-height: 70px;
     padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #e8e7e6;
-    border-bottom: 1px solid $orangeDark;
-    position: sticky;
+    background-color: transparent;
     a {
         text-decoration: none;
         .logo {
@@ -20,26 +17,6 @@ header {
             color: $orangeDark;
         }
     }
-    nav {
-        z-index: 999;
-        position: absolute;
-        background-color: #d6d6d6;
-        top: 70px;
-        left: 0;
-        width: 100vw;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        text-align: center;
-        align-items: baseline;
-        border-top: 1px solid $orangeDark;
-        a {
-            font-size: 1.3rem;
-            font-weight: 400;
-            color: $orangeDark;
-            margin: 2rem 0;
-            cursor: pointer;
-        }
-    }
     .burger {
         display: flex;
         cursor: pointer;
@@ -49,18 +26,49 @@ header {
             height: auto;
         }
     }
+    .mobile-nav {
+        z-index: 999;
+        position: absolute;
+        background-color: rgba(233, 233, 233, 0.9);
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        align-items: baseline;
+        border-top: 4px solid $orangeDark;
+        a {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: $orangeDark;
+            margin: 1.5rem 0;
+            cursor: pointer;
+        }
+    }
+    .desktop-nav { display: none; }
 }
 
 @media (min-width: 576px) {
     header {
+        height: 100px;
+        padding: 0 2rem;
         .burger {
             display: none;
         }
-        a {
-            padding: .5rem .8rem;
-        }
-        a:hover {
-            @include buttonPill;
+        .desktop-nav {
+            display: inline-block;
+            a {
+                padding: .5rem .8rem;
+                font-size: 1.1rem;
+                font-weight: 400;
+                color: $orangeDark;
+                margin: 1.5rem 0;
+                cursor: pointer;
+            }
+            a:hover {
+                @include buttonPill;
+            }
         }
     }
 }
