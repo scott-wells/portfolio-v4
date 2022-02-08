@@ -76,6 +76,23 @@
     }
 }
 
+@media (min-width: 1441px) {
+    header{
+        height: 200px;
+        padding: 0 6rem;
+        a {
+            .logo {
+                font-size: 4rem;
+            }
+        }
+        .desktop-nav{
+            a {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
 .hide { display: none; }
 
 .nav-shrink {

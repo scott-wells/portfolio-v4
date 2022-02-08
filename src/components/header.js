@@ -14,7 +14,9 @@ const Container = styled.div`
         background-size: cover;
         height: 100vh;
         text-align: center;
-        border-bottom: 10px solid var(--color);
+    }
+    hr {
+        border: 10px solid var(--color);
     }
     @media (min-width: 576px) {
         .section-hero { 
@@ -31,6 +33,7 @@ const Header = () => {
                 <Navbar></Navbar>
                 <Hero></Hero>
             </section>
+            <hr/>
         </Container>
         
     )
