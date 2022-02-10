@@ -12,7 +12,6 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-styled-components",
-    "bootstrap-icons",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -29,6 +28,17 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: 'Poppins',
+            weights: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+          },
+        ]
+      }
     },
   ],
 };

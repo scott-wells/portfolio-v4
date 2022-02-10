@@ -1,6 +1,10 @@
-/* ---------------
-    Variables
------------------- */
+/* Imports
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,800&display=swap');
+
+
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 $darkGray: rgb(50, 50, 50);
 $gray: #868f92;
 $offWhite: #f3f3f3;
@@ -11,9 +15,9 @@ $tablet: 768px;
 $desktop: 1024px;
 $desktopXL: 1440px;
 
-/* ---------------
-     Mixins
------------------- */
+
+/* Mixins
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @mixin buttonPill {
   background: rgba(255, 255, 255, 0.2);
   padding: 0.5rem 0.8rem;
@@ -22,9 +26,9 @@ $desktopXL: 1440px;
   cursor: pointer;
 }
 
-/* ---------------
-     Animations
------------------- */
+
+/* Animations
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @keyframes opacityFadeIn {
   from {
     opacity: 0;
@@ -34,21 +38,9 @@ $desktopXL: 1440px;
   }
 }
 
-/* ---------------
-      Fonts
------------------- */
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;800&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,800&display=swap');
-// * { font-family: "Montserrat", Arial, Helvetica, sans-serif; }
-// * { font-family: "Nunito", Arial, Helvetica, sans-serif; }
-* { font-family: "Poppins", Arial, Helvetica, sans-serif; }
 
-
-/* ------------------
-    Root Page Styles
---------------------- */
+/* Normalize
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 *,
 :after,
 :before {
@@ -61,7 +53,6 @@ html {
   }
 
 
-
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
@@ -71,13 +62,14 @@ html {
   padding: 0;
 }
 /* Larger than phablet */
-@media (min-width: 550px) {
+@media (min-width: 576px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 32px;
   }
 }
 body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: black;
   font-size: 1rem;
   font-weight: 200;
