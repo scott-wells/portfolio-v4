@@ -1,18 +1,29 @@
 // Imports //
 import * as React from "react"
+// icons
+import HtmlIcon from "../images/icons/HtmlIcon"
+import CssIcon from "../images/icons/CssIcon"
+import JavascriptIcon from "../images/icons/JavascriptIcon"
+import BootstrapIcon from "../images/icons/BootstrapIcon"
 
 
 // Render
 const Work = () => {
     return (
         <section className='section-work'>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-            <p>This is some paragraph text that goes inside a paragraph of text.</p>
+            <div className="work-container">
+                <div className="project">
+                    <h4>Work Title</h4>
+                    <div className="icons">
+                        <HtmlIcon></HtmlIcon>
+                        <CssIcon></CssIcon>
+                        <JavascriptIcon></JavascriptIcon>
+                        <BootstrapIcon></BootstrapIcon>
+                    </div>
+                    <p>Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin. Swine sausage shoulder, tenderloin est pork chop ham velit in landjaeger buffalo.</p>
+                    <span>Read more</span><button type="button">arrow</button>
+                </div>
+            </div>
         </section>
     )
 }

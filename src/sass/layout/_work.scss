@@ -1,6 +1,38 @@
 .section-work {
-    background-color: indianred;
-    color: white;
-    opacity: .6;
-    min-height: 33.333vh;
+    padding: 3rem 0;
+    // background-color: #f1ebe6;
+    background-color: #fafafa;
+    .work-container {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+        justify-items: center;
+        .project {
+            background-color: #fafafa;
+            border: 1px solid rgba(0, 0, 0, .2);
+            box-shadow: 0 8px 40px -16px rgb(12 22 44 / 32%);
+            max-width: 350px;
+            border-radius: 1rem;
+            padding: 2rem 1rem;
+            h4 {
+                margin-top: 0;
+                margin-bottom: 2rem;    
+            }
+            .icons {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 0 1rem;
+                margin-bottom: 1rem;
+            }
+            p {
+                margin-bottom: 2rem; 
+            }
+            span {
+                font-size: $fontSize-3;
+                font-weight: 400;
+                padding-right: 1rem;
+            }
+        }
+    }
 }
