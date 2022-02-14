@@ -78,7 +78,9 @@ const projects = [
         <section className='section-work'>
             <div className="work-container">
             {projects.map((project, index) => {
-                <Project key={index} projects={project.title, project.icons, project.desc}></Project>
+                return(
+                    <Project project={project}></Project>
+                )
             })}
             </div>
         </section>
