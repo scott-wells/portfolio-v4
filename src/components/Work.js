@@ -1,33 +1,89 @@
 // Imports //
 import * as React from "react"
-// icons
-import HtmlIcon from "../images/icons/HtmlIcon"
-import CssIcon from "../images/icons/CssIcon"
-import JavascriptIcon from "../images/icons/JavascriptIcon"
-import BootstrapIcon from "../images/icons/BootstrapIcon"
+// components
+import Project from './project'
 
 
 // Render
 const Work = () => {
+
+    // projects array
+const projects = [
+    {
+        title: 'Albuquerque Church',
+        icons: [
+            'html', 'css', 'javascript', 'bootstrap', 'react', 'gatsby', 'sanity'
+        ],
+        desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
+    },
+    {
+        title: 'Community Educator Interactive Modules',
+        icons: [
+            'html', 'css', 'javascript'
+        ],
+        desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
+    },
+    {
+        title: 'ASU Educator Development',
+        icons: [
+            'html', 'css', 'javascript'
+        ],
+        desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
+    },
+    {
+        title: 'Lisa Meyer-Hagan for State Senate',
+        icons: [
+            'html', 'css', 'wordpress'
+        ],
+        desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
+    },
+    {
+        title: 'Sandy Rausch for State Senate',
+        icons: [
+            'html', 'css', 'wordpress'
+        ],
+        desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
+    },
+    {
+        title: 'ABQ Trails',
+        icons: [
+            'html', 'css', 'javascript', 'react', 'mapbox'
+        ],
+        desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
+    },
+    {
+        title: 'Elizabeth Wells Photography',
+        icons: [
+            'html', 'css', 'javascript', 'squarespace'
+        ],
+        desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
+    },
+    {
+        title: 'Fancy Slideshow',
+        icons: [
+            'html', 'css', 'javascript'
+        ],
+        desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
+    },
+    {
+        title: 'Doge Meme Generator',
+        icons: [
+            'html', 'css', 'javascript'
+        ],
+        desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
+    },
+]
+
     return (
         <section className='section-work'>
             <div className="work-container">
-                <div className="project">
-                    <h4>Work Title</h4>
-                    <div className="icons">
-                        <HtmlIcon></HtmlIcon>
-                        <CssIcon></CssIcon>
-                        <JavascriptIcon></JavascriptIcon>
-                        <BootstrapIcon></BootstrapIcon>
-                    </div>
-                    <p>Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin. Swine sausage shoulder, tenderloin est pork chop ham velit in landjaeger buffalo.</p>
-                    <span>Read more</span><button type="button">arrow</button>
-                </div>
+            {projects.map((project, index) => {
+                <Project key={index} projects={project.title, project.icons, project.desc}></Project>
+            })}
             </div>
         </section>
     )
 }
-
 
 
 export default Work
