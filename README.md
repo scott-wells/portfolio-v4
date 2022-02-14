@@ -1,4 +1,8 @@
 # Scott Wells Portfolio
+----
+
+### Why another portfolio?
+The purpose of this project is 1) to obviously showcase projects that I'm working on for prospective employers or clients, but also 2) it is to learn Gatsby more in-depth and to add features over time. At the beginning I will Gatsby's router and Sass intergration. Later on, I intend to add a blog and connect it to a headless CMS, like Sanity. I would also like to explore Gatsby image processing and how image heavy websites can remain performant.
 
 ##### Feb. 6th
 Moved files. Renamed some components. Started working on the navbar. Made a burger menu for mobile. This was done by adding a toggle onClick and a '.hide' CSS class. Added styled components to get the background image working. Styled hero and navbar for desktop.
