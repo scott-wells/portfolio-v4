@@ -14,6 +14,7 @@ Only had time for a little coding this evening. Finished styling a card componen
 
 ##### Feb. 13th
 Spent the evening trying to loop through data and pass that data to unique components. (I probably should watch a tutorial, because I'm not passing props the correct way to the component.) It's fine though. The component looks good. Just need to get the correct data into it.
+*Edit: Got it working!*
 
 todo:
 - make component to link to portfolio project pages
