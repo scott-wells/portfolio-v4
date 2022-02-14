@@ -3,7 +3,6 @@ import * as React from "react"
 // components
 import Project from './project'
 
-
 // Render
 const Work = () => {
 
@@ -12,21 +11,21 @@ const projects = [
     {
         title: 'Albuquerque Church',
         icons: [
-            'html', 'css', 'javascript', 'bootstrap', 'react', 'gatsby', 'sanity'
+            'html', 'css', 'js', 'sass', 'bootstrap', 'react', 'gatsby', 'sanity'
         ],
         desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
     },
     {
         title: 'Community Educator Interactive Modules',
         icons: [
-            'html', 'css', 'javascript'
+            'html', 'css', 'js'
         ],
         desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
     },
     {
         title: 'ASU Educator Development',
         icons: [
-            'html', 'css', 'javascript'
+            'html', 'css', 'js'
         ],
         desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
     },
@@ -47,28 +46,28 @@ const projects = [
     {
         title: 'ABQ Trails',
         icons: [
-            'html', 'css', 'javascript', 'react', 'mapbox'
+            'html', 'css', 'js', 'sass', 'react', 'mapbox'
         ],
         desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
     },
     {
         title: 'Elizabeth Wells Photography',
         icons: [
-            'html', 'css', 'javascript', 'squarespace'
+            'html', 'css', 'js', 'squarespace'
         ],
         desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
     },
     {
         title: 'Fancy Slideshow',
         icons: [
-            'html', 'css', 'javascript'
+            'html', 'css', 'js'
         ],
         desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
     },
     {
         title: 'Doge Meme Generator',
         icons: [
-            'html', 'css', 'javascript'
+            'html', 'css', 'js'
         ],
         desc: 'Spicy jalapeno bacon ipsum dolor amet pork tongue flank prosciutto, rump ut laborum ham hock sunt cupidatat dolore ut in kevin.',
     },
@@ -79,13 +78,12 @@ const projects = [
             <div className="work-container">
             {projects.map((project, index) => {
                 return(
-                    <Project project={project}></Project>
+                    <Project key={index} project={project}></Project>
                 )
             })}
             </div>
         </section>
     )
 }
-
 
 export default Work
